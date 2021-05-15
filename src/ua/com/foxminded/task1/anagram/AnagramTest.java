@@ -30,17 +30,17 @@ public class AnagramTest {
 
     @Test
     void reverseText_ShouldReturnOneSpace_WhenOneSpaceInput() {
-        String input = "\\s";
+        String input = " ";
         String actual = anagram.reverseText(input);
-        String expected = "\\s";
+        String expected = " ";
         assertEquals(expected, actual);
     }
 
     @Test
     void reverseText_ShouldReturnTwoSpace_WhenTwoSpaceInput() {
-        String input = "\\s*";
+        String input = "  ";
         String actual = anagram.reverseText(input);
-        String expected = "\\s*";
+        String expected = "  ";
         assertEquals(expected, actual);
     }
 
